@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" href="monportofolio.css">
+    <title>Portofoliom</title>
+    
+</head>
+<body>
+
+<header>
+    <div class="header-left">
+        <img src="img/20241213_img_médaillon2.jpeg" alt="cinéstyle" width="800" >
+    </div>
+    <div class="header-center">
+        <div class="name">Laura Meighan</div>
+        <a href="../projet-1/index.html"  class="cv-button"><i class="fa fa-download "></i>
+            Download CV</a>
+        </div>
+    <div class="header-right">
+<div class="menu-icon" onclick="openNav()">&#9776;</div>
+    </div>   
+</header>
+   <div id="hamburger-menu" class="hamburger-menu">
+    <a href="javascript:void(0)" onclick="closeNav()">Close &times;</a>
+    <a href="#" onclick="closeNav()">Accueil</a>   
+    <a href="#présentation" onclick="closeNav()">Présentation</a>
+    <a href="#portofolio" onclick="closeNav()">Portofolio</a>
+    <a href="#contact" onclick="closeNav()">Contact</a>
+    </div>
+
+<div class="row"></div>
+<div class="column">
+    <div id="portofolio">
+        <h1>Portofolio</h1>
+    <div id="paragraphe">
+        <h2 id="Projet1">Animations simples</h2>
+        <p>Pour réaliser cette page web J'ai utilisé HTML et CSS.  Ce qui m'a plu dans
+            la réalisation de cette page Web c'est :
+            -La création de liens afin d'enrichir mon contenu
+            -La création de liens internes afin de rendre ma page 
+            plus facile et plus pratique à lire.
+            -Le choix et l'organisation des images devant illustrer de la meilleure façon possible le contenu de la page. 
+</p>
+
+<h2 id="Projet2">DOM "events" et DOM "animations"</h2>
+<h3>DOM "event"</h3>
+<div id="click-game">
+    <p>Cette page html est ludique et très simple.  L'utilisateur doit  
+        cliquer sur le chat afin  que ce dernier puisse récupérer sa moustache.
+        Dans ce projet j'ai utilisé les propriétés de DOM afin que la moustache puisse se déplacer à chaque nouveau 
+        click de l'utilisateur.  Ma fonction onCatClick () contient 4 éléménts:
+        2 propriétés d'un "DOM event" et 2 coordonnées X et Y.
+        Les deux évenements DOM et Les 2 coordonnées X et Y vont permettre d'une part d'intégrer des éléments HTML comme variabkes 
+        dans ma fonction onClick () contenue dans Javascript et 
+        d'autre part de rendre le click de l'utilisateur interactif.  
+    L'"event listener" permet de rappeler ma fonction onCatClick ()
+     à chaque nouveau click de l'utilisateur.
+    </p>
+          </div>
+    <h3>DOM "animation"</h3>
+<div id="walkthecat">
+    <p>Pour réaliser cette animation j'ai utilisé HTML, CSS, DOM "animation" et JS:
+        Mon code contient notamment une fonction qui lorqu'elle est appelée définit comment doit fonctionner l'animation (ex Direction de la marche du chat).
+        D'autre part "window.requestAnimationFrame" est une méthode indiquant au navigateur toute nouvelle mise à jour de mon animation, et cela
+        avant l'actualisation du naviguateur. Cette méthode permet aussi à l'animation de fonctionner en continu à chaque fois que l'on appelle la fonction walkTheCat .
+        Chaque mise à jour de l'animation (ex "Je veux minuter la marche de mon chat") nécessite le rappel de la méthode "window.requestAnimationFrame" pour indiquer
+    ce changement au navigateur</p>
+</div>
+<h2>JQuery</h2>
+<h3> Modifier DOM avec Jquery</h3>
+<div id="chenille">
+    <p>Jquery est une "librairie" de fonctions JavaScript utilisée pour faciliter le travail des développeurs / développeuses.
+        Dans cet exercice Jquery m'a permis de modifier un texte rapidement. J'ai utilisé la méthode JQuery text () pour d'abord modifier le titre h1 :
+        <pre><code>
+            $("h1").text("Butterflies");
+            </code></pre>
+        J'ai ensuite remplacé "caterpillar" par "butterflies" dans les paragraphes et changer d'image.  J'ai aussi modifié la couleur du titre:
+        <pre>
+            <code>
+                $("p").html("<strong>Butterflies</strong> can have vivid colors");
+    $("img").attr("src",'https://www.kasandbox.org/programming-images/animals/butterfly_monarch.png')
+    $("h1").css("color","green")
+    </code>
+        </pre>  
+        J'ai pu effectuer des changements dans mon texte en un temps limité.  Bien qu'il s'agissait d'un texte court, cet exercice a montré tout l'intêret que JQuery vaut à être utilisé 
+        pour modifier de plus grands contenus html. 
+          </p>
+</div>
+<h2>Créer des formulaires avec JQuery</h2>
+<h3>Trivia-quizz</h3>
+<div id="trivia-game">
+Pour développer ce questionnaire Trivia en utilisant les ressources de JQuery dans Javascript j'ai utilisé un "event lstener" de DOM.  
+Cette méthode sera implémentée à chaque fois que utilisateur cliquera sur le bouton "answer".
+Le code suivant permet à Javascript de trouver le formulaire et d'écouter chaque fois que le bouton "answer" est pressé.
+<pre>
+    <code>
+        $("#quiz-form").on("submit",)
+    </code>
+</pre>
+Un naviguateur par défaut envoie les formulaires sur un serveur afin de sauvegarder les données.  Ce code <pre><code>"eventpreventDefault</code></pre>
+ permettra à Javascript d'intercepter les données recueillies et permettre à l'utilisateur de rester sur la page.
+ Le variable $answer store la collection Jquery de toutes les réponses que l'utilisateur peut choisir.  
+ <prev><code>var $answer = $("#trivia-answer");</code></prev>
+ Plus précisément la méthode Jquery "val" sera implémentée sur la réponse donnée par l'utilisateur: <pre><code> var answer = $answer.val();</code></pre>
+J'ai ajouté dans mon code des conditions pour indiquer à l'utilisateur si sa réponse est correcte ou pas: <pre><code> if (answer ==="resig"){
+    $("#result").text("You did it!") 
+} else{ 
+$("#result").text("Try again!")
+}</code></pre>
+</div>
+<h3>Formumaire - wordgame</h3>
+<div id="Scrambledwords">
+    <p>Voici un exemple de jeu formé sur la base d'un questionnaire.  Personnellement je trouve que les jeux de mots mélangés peuvent être très intéressants selon les objectifs visés.  Celui-ci est ludique
+    et pédagogique.  
+    Pour le moment il est limité à 3 catégories avec un nombre de mots restreints mais les possibilités sont infinies.  J'ai construit ce jeu dans HTML avec les mêmes sélecteurs que l'on utilise pour créer 
+    des formulaires et CSS pour la mise en forme.
+    <pre><code> 
+   
+J'ai pu rendre ce jeu interactif en utilisant Javascript et Jquery.</p>
+<prev><code>$("#game").hover(
+    function() { $("#img").show(1000); },
+    function() { $("#img").hide(1000); }
+);
+</prev></code>
+     </div>
+               <div id="présentation">
+                <h1>Présentation</h1>
+                <p>J'ai suivi en 2023 une formation de développeur web ce qui m'a permis de travailler avec HTML5, css3, JavaScript et Jquéry.   
+                    J'ai réalisé pendant cette formation de nombreux projets dont vous trouverez des exemples sur mon site web.  La conception "front-end" des sites 
+                    web m'intéresse et peut représenter un vrai défi. Il faut parfois faire des choix et accomoder l'aspect créatif, pratique et fonctionnel du site,
+                    afin de privilégier l'expérience utilisateur et la faisabilité du projet.</p>
+            </div>
+</div>
+        </div>
+</div>
+
+          <div class="column">
+        <h2>HTML CSS javascript</h2>
+        <div id="agency">
+           <p>  <a href="project1/project2/index.html"     class="static">travel agency</a> </p>
+            <img id="Ireland" src="project1/project2/img/231DingleHarbour-bbc2f8fa.webp" width = "200">
+        </div>
+
+        <div id ="Catsmustache">
+            <h2>HTML, CSS, DOM "events" et javascript</h2>
+            <p> <a href="project1/project2/project3/index.html" class="catwithmustache">the-cat-mustach</a></p>
+            <img id="cat-game" src="project1/project2/project3/img/cat.moustache.png"  width="200">
+            <img id="mustache" src="project1/project2/project3/img/mustache.png"  width="200">
+           </div>
+          
+       <div id ="Cat">
+        <h2>HTML, CSS, DOM "animation" et javascript</h2>
+        <p> <a href="project1/project2/project3/project4/index.html" class="Cat-anim">Animation-cat</a></p>
+        <img id="Catwalk" src="project1/project2/project3/project4/img/ChatCat.png" width="200" height="170"  > 
+       </div>
+       
+       <div id ="jquery">
+    <p><a href="project1/project2/project3/project4/project5/index.html" class="transform">Caterpilar-to-Butterfly</a></p>
+<img id="Chenille" src="project1/project2/project3/project4/project5/img/Monarch_caterpillar_on_swan_plant_branchlet.jpg" width="300" height="170">     
+<img id="Papillon" src="project1/project2/project3/project4/project5/img/butterfly_monarch.png" width="300" >
+        </div>
+        <div id="form">
+<p><a href= "project1/project2/project3/project4/project5/project6/index.html"  class="quizz">Trivia-quizz</a></p>
+<img id="copieecran" src="project1/project2/project3/project4/project5/project6/img/Capture d’écran (198).png" width="300">
+</div>
+<div id="form -Jquery">
+    <p><a href= "index.html" class="Scrambledwords">Scrambled</a></p>
+    <img id="Mélange" src="index.html" width="300">
+</div>
+
+</div>
+</body>
+<script src= "script.js"></script>
+</html>
