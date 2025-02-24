@@ -11,3 +11,6 @@ h2 {
     
 }
 
+img {
+    box-sizing:border-box;
+}
