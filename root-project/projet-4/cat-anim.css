@@ -1,0 +1,9 @@
+body {
+    background-color:rgb(189, 221, 247) ;
+
+}
+
+#cat {
+    position: absolute;
+    left: 0px;
+}
