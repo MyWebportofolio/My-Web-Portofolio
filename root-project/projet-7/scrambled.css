@@ -1,0 +1,40 @@
+ body {
+            background-color: lightgrey;
+        }
+        /* Hide the image initially */
+        #img {
+            display: none;
+            width: 350px;
+        }
+        /* Hover styles for #game and #method */
+        #game {
+            display: block;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        #method {
+            
+            cursor: pointer;
+        }
+        #biologyInput, #glassInput, #physicsInput {
+            margin-bottom: 20px;
+        }
+        /* Styling for side-by-side layouts of fieldsets */ 
+        #fieldsets-container {
+            display:inline-block;
+            justify-content: left;
+            margin-top: 20px;
+            background-color: chocolate;
+            color: aliceblue;
+        }
+        /* Width for each fieldset */
+        #biologyscrambled, #glassscrambled, #physicsscrambled {
+
+            width: 300px;
+            padding: 20px;
+        }
+        p {
+        -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
+        transition: color 2s; /* For modern browsers */
+        }
+   
