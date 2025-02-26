@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+   <link rel="stylesheet" href="scrambled.css">
+    <title>Scrambled words in Biology!</title>
+<body>
+    <span id="game">Word game!</span>
+    <img id="img" src="img/istockphoto-2061316065-alphabet1.jpg" alt="HoverImage" />
+
+    <p id="method">Select a scrambled word from the dropdown menu and add the correct word inside the input field</p>
+
+    <!-- Form containing all scrambled word games -->
+    <div id="fieldsets-container">
+    <form id="fun-form">
+        <!-- Biology Scrambled Words -->
+            <fieldset id="biologyscrambled">
+                <legend>Biology Scrambled Words</legend>
+                <label>
+                    <select id="biologyScrambled" onchange="displaySelectedWord('biologyScrambled', 'biologySelectWord')">
+                        <option value="drgneohy" data-correct="hydrogen">drgneohy</option>
+                        <option value="rawet" data-correct="water">rawet</option>
+                        <option value="allpacriyr" data-correct="capillary">allpacriyr</option>
+                        <option value="tvnelos" data-correct="solvent">tvnelos</option>
+                        <option value="eeb" data-correct="bee">eeb</option>
+                    </select>
+                    <p id="biologySelectWord"></p>
+                    <input id="biologyInput" type="text" size="10">
+                    <button type="button" onclick="checkAnswer('biologyInput', 'biologyScrambled', 'biologyResult')">Check</button>
+                </label>
+                <p id="biologyResult"></p>
+            </fieldset>
+
+            <!-- Glass Scrambled Words -->
+            <fieldset id="glassscrambled">
+                <legend>Glass Scrambled Words</legend>
+                <label>
+                    <select id="Glassscrambled" onchange="displaySelectedWord('Glassscrambled', 'glassSelectWord')">
+                        <option value="agsls" data-correct="glass">agsls</option>
+                        <option value="licsrta" data-correct="cristal">licsrta</option>
+                        <option value="rmorir" data-correct="mirror">rmorir</option>
+                        <option value="ndaidom" data-correct="diamond">ndaidom</option>
+                        <option value="frectvieel" data-correct="reflective">frectvieel</option>
+                    </select>
+                    <p id="glassSelectWord"></p>
+                    <input id="glassInput" type="text" size="10">
+                    <button type="button" onclick="checkAnswer('glassInput', 'Glassscrambled', 'glassResult')">Check</button>
+                </label>
+                <p id="glassResult"></p>
+            </fieldset>
+
+            <!-- Physics Scrambled Words -->
+            <fieldset id="physicsscrambled">
+                <legend>Physics Scrambled Words</legend>
+                <label>
+                    <select id="physicsScrambled" onchange="displaySelectedWord('physicsScrambled', 'physicsSelectWord')">
+                        <option value="hpysciits" data-correct="physicist">hpysciits</option>
+                        <option value="ivnrsuee" data-correct="universe">ivnrsuee</option>
+                        <option value="elovycit" data-correct="velocity">elovycit</option>
+                        <option value="umneotmm" data-correct="momentum">umneotmm</option>
+                        <option value="pesde" data-correct="speed">pesde</option>
+                    </select>
+                    <p id="physicsSelectWord"></p>
+                    <input id="physicsInput" type="text" size="10">
+                    <button type="button" onclick="checkAnswer('physicsInput', 'physicsScrambled', 'physicsResult')">Check</button>
+                </label>
+                <p id="physicsResult"></p>
+            </fieldset>
+        </div>
+    </form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</body>
+<script src="script.js"></script>
+</html>
