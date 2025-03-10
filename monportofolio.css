@@ -54,26 +54,25 @@ color: #333;
 }
 
 .header-right .menu-icon {
-    position: fixed;
+    position:fixed;
     top:0px;
-    right:0px;
+    right:20px;
     font-size: 30px;
     cursor: pointer;
 }
 
 .hamburger-menu {
-    position: fixed;
+    position:fixed;
     top: 0;
     right:-1000px;
-    display:block;
-    height: 100%;
+    display:none;
     width: 250px;
     background-color: #333;
-    overflow: hidden;
     transition: right 0.3s ease;
     color: white;
 padding: 20px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    
 }
 
 .hamburger-menu a {
@@ -84,8 +83,8 @@ padding: 20px;
     margin: 10px 0;
 }
 
-.hamburger-menu a:hover {
-    background-color: #575757;
+#hamburger-menu a:hover {
+    background-color: orange;
 }
 
 
@@ -94,25 +93,105 @@ padding: 20px;
     width:50%;
     padding: 10px;
 
-      
-    background-color: #f9f9f9;
+        background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-top: 8px;
-    }
-
-#harbour {
-    width : 150px;
-    height: 150px;
-}
+            }
     
-#paragraphe {
-margin-top: 8px;
-}  
-
 
 .row:after {
 content:"";
 display: table;
 clear: both;
 }
+
+ @media only screen and (max-width:1280px) {
+    .header-left #ciné  {
+        display:none;
+           z-index: 0;
+    }
+ }
+    
+ @media only screen and (max-width:1280px) {
+ .header-center .name .cv-button {
+    display:none;
+    z-index:1;
+    }
+ }
+
+ @media only screen and (max-width:1280px) {
+
+    .header-right .menu-icon {
+    position:absolute;
+    display: block;
+    right: 1rem;
+    
+} .hamburger-menu {
+        position:absolute;
+        display: block;
+        right: 3rem;
+    }        
+    
+}
+
+@media only screen and (max-width:1280px) and (hover: hover) {
+    #hamburger-menu:hover {
+         background-color:yellowgreen;
+     }        
+ }
+  
+@media only screen and (max-width:1280px) {
+
+body {
+            font-size: 1rem;
+        }
+}
+@media only screen and (max-width:1280px) {       
+    img  #reland  #Catwalk #Chenille #Papillon #copieecran #Mélange {
+width:100%;
+height:auto;
+    }
+     }
+     @media only screen and (max-width:1280px) {
+     #cat-game  {       
+        width:100%;
+        height:auto;
+     }
+    }
+    
+    @media only screen and (max-width:1280px) {
+    #Chenille {
+
+        width:100%;
+        height:auto;
+
+    } 
+    }
+    @media only screen and (max-width:1280px) {
+    #Papillon  {
+
+        width:100%;
+        height:auto;
+
+    }
+    
+    }
+
+    @media only screen and (max-width:1280px) {
+    #copieecran {
+
+        width:100%;
+        height:auto;
+
+    } 
+    
+}
+    
+@media only screen and (max-width:1280px) { 
+#Mélange {
+ 
+    width:100%;
+    height:auto;
+ }
+    }
