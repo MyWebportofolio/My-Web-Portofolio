@@ -99,13 +99,13 @@ background-color: #f9f9f9;
             }
 
 
-    #paragraphes {
+    p {
     margin-left: 20px;
     margin-right: 20px;
     
  }  
  
- code {
+ pre {
     margin-left : 24px;
         
     }
@@ -118,9 +118,9 @@ clear: both;
 }
 
  @media only screen and (max-width:1280px) {
-    .header-left #ciné  {
+    .header-left img  {
         display:none;
-           z-index: 0;
+           z-index: -0;
     }
  }
     
@@ -140,18 +140,13 @@ clear: both;
     
 } .hamburger-menu {
         position:absolute;
-        display: block;
+        display: none;
         right: 3rem;
     }        
     
 }
 
-@media only screen and (max-width:1280px) and (hover: hover) {
-    #hamburger-menu:hover {
-         background-color:yellowgreen;
-     }        
- }
-  
+ 
 @media only screen and (max-width:1280px) {
 
 body {
@@ -159,53 +154,17 @@ body {
         }
 }
 @media only screen and (max-width:1280px) {       
-    img  #reland  #Catwalk #Chenille #Papillon #copieecran #Mélange {
+      #reland, #cat-game, #Catwalk, #Chenille, #Papillon, #copieecran, #Mélange {
 width:100%;
 height:auto;
     }
      }
+     
      @media only screen and (max-width:1280px) {
-     #cat-game  {       
-        width:100%;
-        height:auto;
-     }
-    }
-    
-    @media only screen and (max-width:1280px) {
-    #Chenille {
-
-        width:100%;
-        height:auto;
-
-    } 
-    }
-    @media only screen and (max-width:1280px) {
-    #Papillon  {
-
-        width:100%;
-        height:auto;
-
-    }
-    
-    }
-
-    @media only screen and (max-width:1280px) {
-    #copieecran {
-
-        width:100%;
-        height:auto;
-
-    } 
-    
+pre {
+    margin-left: 10px;
+}
 }
     
-@media only screen and (max-width:1280px) { 
-#Mélange {
- 
-    width:100%;
-    height:auto;
- }
-    }
-    code {
-        margin:auto;
-    }
+    
+    
