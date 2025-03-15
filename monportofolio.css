@@ -128,6 +128,7 @@ clear: both;
  @media only screen and (max-width:1280px) {
  .header-center,.name,.cv-button {
     display:inline-block;
+     font-size:8px;
     z-index:1;
     }
  }
