@@ -127,10 +127,11 @@ clear: both;
     
  @media only screen and (max-width:1280px) {
  .header-center,.name,.cv-button {
-    display:inline-block;
+    display:block;
      font-size:4px;
      padding: 5px 10px;
-    z-index:1;
+  border-radius:1px;
+     z-index:1;
     }
  }
 
