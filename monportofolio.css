@@ -129,6 +129,7 @@ clear: both;
  .header-center,.name,.cv-button {
     display:inline-block;
      font-size:8px;
+     padding: 5px 10px;
     z-index:1;
     }
  }
