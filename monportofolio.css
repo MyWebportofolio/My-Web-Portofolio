@@ -118,6 +118,11 @@ clear: both;
 }
 
  @media only screen and (max-width:1280px) {
+body{
+    font-family : monospace;
+}
+ }
+    @media only screen and (max-width:1280px) {
     .header-left img  {
        position:relative;
         display:none;
