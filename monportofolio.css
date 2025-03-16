@@ -65,7 +65,7 @@ color: #333;
 .hamburger-menu {
     position:fixed;
     top: 0;
-    right:-500px;
+    right:-2000px;
     display:none;
     width: 25px;
     background-color: #333;
