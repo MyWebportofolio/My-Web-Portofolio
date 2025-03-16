@@ -63,7 +63,7 @@ color: #333;
 }
 
 .hamburger-menu {
-    position:fixed;
+    position:flex;
     top: 0;
     right:-1000px;
     display:none;
