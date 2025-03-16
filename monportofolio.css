@@ -151,7 +151,7 @@ body{
 .hamburger-menu {
 position:relative;
     display: none;
-right: 3rem;
+right: -1000px;
     }        
     }
 
