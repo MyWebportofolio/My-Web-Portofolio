@@ -46,7 +46,7 @@ header {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 8px;
+    font-size: 16px;
 }
 
 .header-center .cv-button:hover {
@@ -65,7 +65,7 @@ color: #333;
 .hamburger-menu {
     position:fixed;
     top: 0;
-    right:-2000px;
+    right:-1000px;
     display:none;
     width: 25px;
     background-color: #333;
@@ -151,7 +151,7 @@ body{
 .hamburger-menu {
 position:relative;
     display: none;
-right: -1000px;
+right: 1rem;
     }        
     }
 
