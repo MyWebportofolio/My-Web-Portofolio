@@ -65,9 +65,9 @@ color: #333;
 .hamburger-menu {
     position:fixed;
     top: 0;
-    right:-1000px;
+    right:-500px;
     display:none;
-    width: 250px;
+    width: 25px;
     background-color: #333;
     transition: right 0.3s ease;
     color: white;
@@ -120,6 +120,7 @@ clear: both;
  @media only screen and (max-width:1280px) {
 body{
     font-family : monospace;
+    font-size:8px;
 }
  }
     @media only screen and (max-width:1280px) {
@@ -149,18 +150,12 @@ body{
     } 
 .hamburger-menu {
 position:relative;
-display: none;
-right: 1rem;
+    display: none;
+right: 3rem;
     }        
     }
 
- @media only screen and (max-width:1280px) {
-
-body {
-            font-size: 1rem;
-        }
-}
-@media only screen and (max-width:1280px) {       
+ @media only screen and (max-width:1280px) {       
       #reland, #cat-game, #Catwalk, #Chenille, #Papillon, #copieecran, #Mélange {
 width:100%;
 height:auto;
