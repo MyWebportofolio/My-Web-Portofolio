@@ -57,7 +57,7 @@ color: #333;
 .header-right .menu-icon {
     position:fixed;
     top:0px;
-    right:20px;
+    right:10px;
     font-size: 30px;
     cursor: pointer;
 }
