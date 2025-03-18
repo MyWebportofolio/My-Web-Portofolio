@@ -156,7 +156,7 @@ right: 1rem;
     }
 
  @media only screen and (max-width:1280px) {       
-      #reland, #cat-game, #Catwalk, #Chenille, #Papillon, #copieecran, #Mélange {
+      #reland, #cat-game, #mustache, #Catwalk, #Chenille, #Papillon, #copieecran, #Mélange, #sql_1 {
 width:100%;
 height:auto;
     }
