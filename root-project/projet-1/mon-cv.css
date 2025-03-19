@@ -54,19 +54,17 @@ li {
 }
 
 .item2 {
-    background-color : lightgrey;
-    color: black;
+    background-color:lightgrey;
     margin: 20px;
     padding: 10px;
     text-align:left;
 }
-item3 {
+.item3 {
     background-color: white;
-    color:black;
     margin:20px;
     padding: 10px;
     text-align: left;
-    }
+}
 h1,h2, h3 {
     font-weight: bold;
 }
