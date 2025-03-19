@@ -4,9 +4,9 @@
     
 body {
 
-    margin: 10px;
+    margin: 60px;
     font-family: 'Courier New', Courier, monospace;
-    color:white;
+    color:black;
 }
 
 
@@ -15,7 +15,7 @@ body {
     background-color: lightgray;
     display:grid;
     grid-template-rows: 200px auto; /*Top row and main area*/
-    grid-template-columns:1,5fr 3fr; /* Two equal-width columns*/
+    grid-template-columns:1fr 2fr; /* Two equal-width columns*/
 /*Space between items*/
 margin:10px;
 }
@@ -29,7 +29,7 @@ i {
 .item1 {
     grid-column: span 2; /* Item1 spans both columns */
 background-color: lightsteelblue;
-text-align: center;
+text-align: left;
 color:black;
 
 }
@@ -49,10 +49,22 @@ color:black;
     cursor: pointer;
     } 
 
-.item2,.item3 {
-    background-color: grey;
+li {
+    margin-left:20px;
+}
+
+.item2 {
+    background-color : lightgrey;
+    margin: 20px;
+    padding: 10px;
+    text-align:left;
+}
+item3 {
+    background-color: white;
     margin:20px;
     padding: 10px;
     text-align: left;
-    
+    }
+h1,h2, h3 {
+    font-weight: bold;
 }
