@@ -161,6 +161,13 @@ width:100%;
 height:auto;
     }
      }
+
+ @media only screen and (max-width:1280px) {
+     #sql_1 {
+         width:100%;
+         height:auto;
+     }
+ }
      
      @media only screen and (max-width:1280px) {
 pre {
