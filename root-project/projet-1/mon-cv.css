@@ -55,12 +55,14 @@ li {
 
 .item2 {
     background-color : lightgrey;
+    color: black;
     margin: 20px;
     padding: 10px;
     text-align:left;
 }
 item3 {
     background-color: white;
+    color:black;
     margin:20px;
     padding: 10px;
     text-align: left;
