@@ -120,6 +120,7 @@ clear: both;
  @media only screen and (max-width:1280px) {
 body{
     font-family : monospace;
+    font-size:16px;
     
 }
  }
@@ -149,9 +150,9 @@ body{
     }
     } 
 .hamburger-menu {
-position:relative;
+position:absolute;
     display: none;
-right: 1rem;
+right: 3rem;
     }        
     }
 
