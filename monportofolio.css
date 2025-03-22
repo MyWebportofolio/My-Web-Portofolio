@@ -57,7 +57,7 @@ color: #333;
 .header-right .menu-icon {
     position:fixed;
     top:0px;
-    right:10px;
+    right:0;
     font-size: 30px;
     cursor: pointer;
 }
@@ -78,7 +78,7 @@ padding: 20px;
 
 .hamburger-menu a {
     display:none;
-    width:80px;
+    width:200px;
     color: white;
     text-decoration: none;
     padding: 10px 0;
