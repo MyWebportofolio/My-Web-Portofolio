@@ -77,7 +77,7 @@ padding: 20px;
 }
 
 .hamburger-menu a {
-    display:none;
+    display:block;
     color: white;
     text-decoration: none;
     padding: 10px 0;
