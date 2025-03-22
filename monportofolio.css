@@ -105,7 +105,7 @@ background-color: #f9f9f9;
     
  }  
  
- code {
+pre, code {
     margin-left : 10px;
         
     }
@@ -134,10 +134,7 @@ body{
     
  @media only screen and (max-width:1280px) {
  .header-center,.name,.cv-button {
-    display:block;
-     font-size:4px;
-     padding: 5px 10px;
-  border-radius:1px;
+    display:none;   
      z-index:1;
     }
  }
@@ -157,22 +154,17 @@ right: 3rem;
     }
 
  @media only screen and (max-width:1280px) {       
-      #Ireland, #cat-game, #mustache, #Catwalk, #Chenille, #Papillon, #copieecran, #Mélange {
+      #Ireland, #cat-game, #mustache, #Catwalk, #Chenille, #Papillon, #copieecran, #Mélange, #sql_1 {
 width:100%;
 height:auto;
+display:block;
     }
      }
-
- @media only screen and (max-width:1280px) {
-     #sql_1 {
-         width:100%;
-         height:auto;
-     }
- }
-     
-     @media only screen and (max-width:1280px) {
-pre {
-    margin-left: 10px;
+ @media only screen and (max-width:600px) {
+pre, code {
+    margin-left: 0;
+    overflow:hidden;
+    display:block;
 }
 }
     
