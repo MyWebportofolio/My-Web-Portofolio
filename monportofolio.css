@@ -64,9 +64,8 @@ color: #333;
 
 .hamburger-menu {
     position:fixed;
-    flex-direction:column;
     top: 0;
-    right:-1000px;
+    right:3rem;
     display:none;
  background-color: #333;
     transition: right 0.3s ease;
@@ -134,7 +133,7 @@ body{
     
  @media only screen and (max-width:1280px) {
  .header-center,.name,.cv-button {
-    display:none;   
+    display:fixed;   
      z-index:1;
     }
  }
