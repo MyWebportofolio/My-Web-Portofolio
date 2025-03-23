@@ -78,8 +78,7 @@ padding: 20px;
 
 .hamburger-menu a {
     display:block;
-    width:100px;
-    color: white;
+     color: white;
     text-decoration: none;
     padding: 10px 0;
     margin: 10px 0;
@@ -172,6 +171,13 @@ pre, code {
     display:block;
 }
 }
+
+ @media only screen and (max-width:600px) {
+     #projets {
+         display:none;
+
+     }
+ }   
     
     
     
