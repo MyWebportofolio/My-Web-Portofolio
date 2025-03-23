@@ -110,6 +110,10 @@ pre, code {
     margin-left : 10px;
         
     }
+
+ #Ireland, #cat-game, #mustache, #Catwalk, #Chenille, #Papillon, #copieecran, #Mélange, #sql_1 {
+     display:block 
+ }
  
 
 .row:after {
