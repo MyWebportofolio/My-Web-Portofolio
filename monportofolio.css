@@ -157,12 +157,21 @@ right: 3rem;
     }
 
  @media only screen and (max-width:600px) {       
-      #Ireland, #cat-game, #mustache, #Catwalk, #Chenille, #Papillon, #copieecran, #Mélange, #sql_1 {
+      #Ireland {
 width:100%;
 height:auto;
 display:block;
     }
      }
+
+ @media only screen and (max-width:600px) {
+     #cat-game {
+width:100%;
+height:auto;
+display:block;
+     }
+ }
+
  @media only screen and (max-width:600px) {
 pre, code {
     margin-left: 0;
