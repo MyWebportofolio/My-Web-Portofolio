@@ -114,7 +114,6 @@ pre, code {
      display:block 
  }
  
-
 .row:after {
 content:"";
 display: table;
@@ -171,8 +170,59 @@ height:auto;
 display:block;
      }
  }
-
  @media only screen and (max-width:600px) {
+#mustache {
+width:100%;
+height:auto;
+display:block;
+     }
+ }
+@media only screen and (max-width:600px) {
+#Catwalk {
+    width:100%;
+height:auto;
+display:block;
+}
+}
+
+@media only screen and (max-width:600px) {
+#Chenille {
+ width:100%;
+height:auto;
+display:block;
+}
+}
+@media only screen and (max-width:600px) {
+#Papillon {
+ width:100%;
+height:auto;
+display:block;
+}
+}
+@media only screen and (max-width:600px) {
+#copieecran {
+     width:100%;
+height:auto;
+display:block;
+}
+}
+
+@media only screen and (max-width:600px) {
+#Mélange {
+width:100%;
+height:auto;
+display:block;
+}
+}
+@media only screen and (max-width:600px) {
+ #sql_1 {
+width:100%;
+height:auto;
+display:block;
+}
+}
+     
+@media only screen and (max-width:600px) {
 pre, code {
     margin-left: 0;
     overflow:hidden;
@@ -180,7 +230,7 @@ pre, code {
 }
 }
 
- @media only screen and (max-width:600px) {
+     @media only screen and (max-width:600px) {
      #projets {
          display:none;
 
