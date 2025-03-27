@@ -93,20 +93,20 @@ Enfin J'ai changé la couleur du titre:
 <h2>Créer des formulaires avec JQuery</h2>
 <h3>Trivia-quizz</h3>
 <div id="trivia-game">
-<p>Pour développer ce questionnaire Trivia en utilisant les ressources de JQuery dans Javascript j'ai utilisé un "event lstener" de DOM.  
-Cette méthode sera implémentée à chaque fois que utilisateur cliquera sur le bouton "answer".
-Le code suivant permet à l"event listener" de Javascript de trouver le formulaire, d'écouter à chaque fois que le bouton "answer" est pressé et de générer 
-une réponse selon la réponse sélectionnée.</p>
+<p>Pour développer ce quizz j'ai d'abord créé un formulaire puisvj'ai utilisé un "event lstener" de DOM.</p></div> 
+<div id = "hiddenquizz">
+<p>Le code suivant montre que l"event listener" va générer un évenement à chaque fois que l'utilisateur cliquera sur le bouton "answer".
+Dans ce jeu l'évenement généré dépendra du choix séléctionné par l'utilisateur.
 <pre><code>
 $("#quiz-form").on("submit",)
 </code></pre>
-<p>Un naviguateur par défaut envoie les formulaires sur un serveur afin de sauvegarder les données.</p> 
- <pre><code>"eventpreventDefault</code></pre> <p>Ce code est utilisé pour que javascript intercepte les données recueillies et permette à l'utilisateur
-  de rester sur la page.  Le variable $answer store la collection Jquery de toutes les réponses que l'utilisateur peut choisir.</p>  
+Un navigateur par défaut envoie les formulaires sur un serveur afin de sauvegarder les données.
+ <pre><code>"eventpreventDefault</code></pre> Ce code est utilisé pour que javascript intercepte les données recueillies et permette à l'utilisateur
+  de rester sur la page.  Le variable $answer store la collection Jquery de toutes les réponses que l'utilisateur peut choisir. 
  <prev><code>var $answer = $("#trivia-answer");</code></prev>
- <p>Plus précisément la méthode Jquery "val" sera implémentée sur la réponse donnée par l'utilisateur:</p>
+ Plus précisément le fonctionnement de la méthode Jquery "val" est structuré sur le choix sélectionné par l'utilisateur:
 <pre><code> var answer = $answer.val();</code></pre>
-<p>J'ai ajouté dans mon code des conditions afin que l'utilisateur puisse savoir si sa réponse est correcte ou non: </p>
+J'ai ajouté dans mon code des conditions afin que l'utilisateur puisse savoir si sa réponse est correcte:
 <pre><code> if (answer ==="resig"){
     $("#result").text("You did it!") 
 } else{ 
@@ -115,24 +115,25 @@ $("#result").text("Try again!")
 </div>
 <h3>Formumaire - wordgame</h3>
 <div id="Scrambledwords">
-    <p>Voici un exemple de jeu formé sur la base d'un questionnaire.  Personnellement je trouve que les jeux de mots mélangés peuvent
-     être très intéressants selon les objectifs visés.  Celui-ci est ludique et pédagogique.  Pour le moment il est limité à 3 catégories 
-     contenant un nombre de mots restreint mais les possibilités sont infinies.  J'ai construit ce jeu dans HTML avec les mêmes sélecteurs que 
-     l'on utilise pour créer des formulaires et CSS pour la mise en forme.</p>
-    <!-- Biology Scrambled Words -->
+    <p>J'ai construit ce jeu sur sur la base d'un questionnaire html.  Celui-ci est ludique et pédagogique.  Il n'a que 3 catégories 
+     contenant un nombre de mots restreint mais les possibilités sont infinies, avec Html, Css et Javascript. </p></div>
+<div id = "hiddenwords">
+    <p></p><!-- Biology Scrambled Words -->
         <!--<form id="fun-form">
             <fieldset id="biologyscrambled">
                     <legend>Biology Scrambled Words</legend> -->
-   <p>Javascript et Jquery m'ont permis de rendre ce jeu interactif:</p>
+   <p>Javascript et Jquery m'ont permis de rendre ce jeu interactif:
 <pre><code> $("#game").hover(
     function() { $("#img").show(1000); },
     function() { $("#img").hide(1000); }
-); </code></pre>
+); </code></pre></p>
      </div>
      <h2>SQL</h2>
   <h3>Mes première base de données SQL</h3>          
 <div id = "sql">
-<p>Pendant ma formation j'ai eu la possibilité de travailler avec SQL en commençant par créer des "TABLES" et des "INSERT" de "VALUES". 
+<p>Pendant ma formation j'ai réalisé quelques bases de données SQL.  Vous pourrez voir quelques exemples en cliquant
+    sur le lien dans la colonne de droite.</p></div>
+<div id = "sqlhidden">
     Vous pouvez voir une copie de ce travail sur la colonne de droite, et en cliquant sur le lien vous pourrez accéder à des projets de bases de données que j'ai réalisés.   
 sql_1: Dans cet exemple j'ai crée une base de données pour un magasin fictif et inséré des valeurs avec "CREATE TABLE", "INSERT" and "VALUES";
 J'ai aussi utilisé "SELECT", "FROM", "WHERE" et "ORDER BY" pour lancer des requêtes et selectionner par commande ou par client par exemple.
