@@ -47,10 +47,11 @@
         <h2 id="Projet2">DOM "events" et DOM "animations" et JavaScript</h2>
 <h3>DOM "event"</h3>
 <div id="click-game">
-    <p>Cette page html est ludique et très simple.  L'utilisateur doit cliquer sur le chat afin  que ce dernier puisse récupérer sa moustache.
+    <p>Cette page html est ludique et simple.  L'utilisateur doit cliquer sur le chat afin  que ce dernier puisse récupérer sa moustache.
         Dans ce projet j'ai utilisé les propriétés de DOM afin que l'utilisateur puisse déplacer la moustache jusqu'à
-        ce qu'il parvienne à la placer au bon endroit. 
-        Ma fonction onCatClick () contient 4 éléménts:
+        ce qu'il parvienne à la placer au bon endroit. </p>
+    <div id = "hidden">   
+    Ma fonction onCatClick () contient 4 éléménts:
         2 propriétés d'un "DOM event" et 2 coordonnées X et Y.
         Les deux évenements DOM et Les 2 coordonnées X et Y vont permettre d'une part d'intégrer des éléments HTML comme variables dans ma 
         fonction onClick() contenue dans Javascript et d'autre part de rendre le click de l'utilisateur interactif.  
@@ -60,27 +61,27 @@
     <h3>DOM "animation"</h3>
 <div id="walkthecat">
         <p>Pour réaliser cette animation j'ai utilisé HTML, CSS, DOM "animation" et javascript:
-        Ce code contient une fonction qui définit la méthode du fonctionnement de l'animation lorqu'elle est appellée.  Par exemple,La direction 
-        de la marche du chat constitue un des fonctionnements de cette animation. 
-        Chaque mise à jour de l'animation (ex "Je veux minuter la marche de mon chat") nécessite l'utilisation de 
-        la méthode "window.requestAnimationFrame" pour indiquer ce changement au navigateur.
-        "Window.requestAnimationFrame" est une méthode indiquant au navigateur toute nouvelle mise à jour de mon animation, et cela avant l'actualisation 
-        du naviguateur. Cette méthode permet aussi à l'animation de fonctionner en continu à chaque fois que l'on appelle la fonction(walkTheCat). .
-        Pour chaque nouvelle mise à jour de l'animation (ex "Je veux minuter la marche de mon chat") le rappel de 
-        la méthode "window.requestAnimationFrame" doit être effectuée pour indiquer ce changement au navigateur</p>
+        Cet exemple de code montre que l'animation du chat est définie par une fonction.  Pour indiquer toute modification dans la fonction au navigateur   
+        il faut utiliser "Window requestAnimationFrame".</p> 
 </div>
+    <div id="hiddencat">
+    <p>Le sens de la marche du chat est un exemple  de fonctionnement de l'animation. Si je veux également minuter sa marche
+        j'utilise la méthode "window.requestAnimationFrame" pour indiquer ce changement au navigateur.  Le navigateur prendra
+        en compte cette modification avant son actualisation.  Cette méthode fait fonctionner l'animation en continu à chaque
+fois que la fonction (walkTheCat) est appellée.</p>
+    </div>
 <h2>JQuery</h2>
 <h3> Modifier DOM avec Jquery</h3>
 <div id ="chenille">
-<p>Jquery est une "librairie" de fonctions JavaScript utilisée pour faciliter le travail des développeurs / développeuses.
-        Dans cet exercice Jquery m'a permis de modifier un texte rapidement. J'ai utilisé la méthode JQuery text() pour 
-        d'abord modifier le titre h1 de "Caterpillars" à "Butterflies" :</p>
-    <pre><code>
+<p>Jquery est une "librairie" de fonctions JavaScript que j'ai utilisée dans cet exercice pour remplacer tous les mots
+    "Caterpillars" par les mots "Butterflies": JQuery text() est utilisé pour modifier par exemple un texte.</p></div>
+    <div id = "hiddenbutterfly">    
+   <p> <pre><code>
     $("h1").text("Butterflies");
     </code></pre>
-        <p>J'ai ensuite remplacé "caterpillars" par "butterflies" dans les paragraphes et changé d'image. J'ai aussi modifié 
-        la couleur du titre:</p>
-    <pre><code>
+        <p>Après avoir modifié les titres, j'ai remplacé "caterpillars" par "butterflies" dans les paragraphes et changé d'image. 
+Enfin J'ai changé la couleur du titre: 
+        <pre><code>
     $("p").html("<strong>Butterflies</strong> can have vivid colors");
     $("img").attr("src",'https://www.kasandbox.org/
     programming-images/animals/butterfly_monarch.png')
