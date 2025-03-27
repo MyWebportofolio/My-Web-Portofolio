@@ -230,12 +230,43 @@ pre, code {
 }
 }
 
-     @media only screen and (max-width:600px) {
+   @media only screen and (max-width:600px) {
      #projets {
          display:none;
 
      }
  }   
     
+   @media only screen and (max-width:600px) { 
+       #hidden {
+           display:none; }
+   }
+   @media only screen and (max-width:600px) {
+#hiddencat {
+    display:none; }
+   }
+   @media only screen and (max-width:600px) {
+#hiddenbutterfly {
+    display:none;
+}
+   }
+   @media only screen and (max-width:600px) {
+       #hiddenquizz {
+           display:none; }
+   }
+   @media only screen and (max-width:600px) {
+       #hiddenwords {
+           display:none; }
+   }   
+@media only screen and (max-width:600px) {
+    #sqlhidden {
+        display:none; }
+}
+   @media only screen and (max-width:600px) {
+#présentationhidden {
+    display:none;}
+   }
     
-    
+
+
+
