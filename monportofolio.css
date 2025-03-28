@@ -111,7 +111,7 @@ pre, code {
     }
 
  #Ireland, #cat-game, #mustache, #Catwalk, #Chenille, #Papillon, #copieecran, #Mélange, #sql_1 {
-     display:block 
+     flex-direction: column; 
  }
  
 .row:after {
