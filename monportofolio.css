@@ -155,7 +155,7 @@ right: 3rem;
     }        
     }
 
- @media only screen and (max-width:600px) {       
+ @media only screen and (max-width:1280px) {       
       #Ireland {
 width:100%;
 height:auto;
@@ -163,21 +163,21 @@ display:block;
     }
      }
 
- @media only screen and (max-width:600px) {
+ @media only screen and (max-width:1280px) {
      #cat-game {
 width:100%;
 height:auto;
 display:block;
      }
  }
- @media only screen and (max-width:600px) {
+ @media only screen and (max-width:1280px) {
 #mustache {
 width:100%;
 height:auto;
 display:block;
      }
  }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:1280px) {
 #Catwalk {
     width:100%;
 height:auto;
@@ -185,21 +185,21 @@ display:block;
 }
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:1280px) {
 #Chenille {
  width:100%;
 height:auto;
 display:block;
 }
 }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:1280px) {
 #Papillon {
  width:100%;
 height:auto;
 display:block;
 }
 }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:1280px) {
 #copieecran {
      width:100%;
 height:auto;
@@ -207,14 +207,14 @@ display:block;
 }
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:1280px) {
 #Mélange {
 width:100%;
-height:auto;
+height:auto
 display:block;
 }
 }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:1280px) {
  #sql_1 {
 width:100%;
 height:auto;
@@ -222,7 +222,7 @@ display:block;
 }
 }
      
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:1280px) {
 pre, code {
     margin-left: 0;
     overflow:hidden;
@@ -230,39 +230,39 @@ pre, code {
 }
 }
 
-   @media only screen and (max-width:600px) {
+   @media only screen and (max-width:1280px) {
      #projets {
          display:none;
 
      }
  }   
     
-   @media only screen and (max-width:600px) { 
+   @media only screen and (max-width:1280px) { 
        #hidden {
            display:none; }
    }
-   @media only screen and (max-width:600px) {
+   @media only screen and (max-width:1280px) {
 #hiddencat {
     display:none; }
    }
-   @media only screen and (max-width:600px) {
+   @media only screen and (max-width:1280px) {
 #hiddenbutterfly {
     display:none;
 }
    }
-   @media only screen and (max-width:600px) {
+   @media only screen and (max-width:1280px) {
        #hiddenquizz {
            display:none; }
    }
-   @media only screen and (max-width:600px) {
+   @media only screen and (max-width:1280px) {
        #hiddenwords {
            display:none; }
    }   
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:1280px) {
     #sqlhidden {
         display:none; }
 }
-   @media only screen and (max-width:600px) {
+   @media only screen and (max-width:1280px) {
 #présentationhidden {
     display:none;}
    }
