@@ -147,7 +147,8 @@ body{
     display: block;
     right: 1rem;
     }
-    
+ }
+ @media only screen and (max-width:1280px) {
 .hamburger-menu {
 position:absolute;
     display: none;
