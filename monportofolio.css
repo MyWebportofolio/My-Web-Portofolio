@@ -57,7 +57,7 @@ color: #333;
 .header-right .menu-icon {
     position:fixed;
     top:0px;
-    right:0;
+    right:20px;
     font-size: 30px;
     cursor: pointer;
 }
@@ -65,20 +65,21 @@ color: #333;
 .hamburger-menu {
     position:fixed;
     top: 0;
-    right:-100px;
-    flex-direction:column;
+    right:-1000px;
+    flex-direction: column;
     display:none;
-width:250px;
+    width: 250px;
     background-color: #333;
     transition: right 0.3s ease;
     color: white;
 padding: 20px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-    }
+    
+}
 
 .hamburger-menu a {
-    display:block;
-     color: white;
+    display: block;
+    color: white;
     text-decoration: none;
     padding: 10px 0;
     margin: 10px 0;
@@ -105,169 +106,111 @@ background-color: #f9f9f9;
     
  }  
  
-pre, code {
-    margin-left : 10px;
+ pre {
+    margin-left : 24px;
         
     }
 
- #Ireland, #cat-game, #mustache, #Catwalk, #Chenille, #Papillon, #copieecran, #Mélange, #sql_1 {
-     flex-direction: column; 
- }
- 
+   
 .row:after {
 content:"";
 display: table;
 clear: both;
 }
 
+
+
  @media only screen and (max-width:1280px) {
-body{
-    font-family : monospace;
-    font-size:12px;
-    
-}
- }
-    @media only screen and (max-width:1280px) {
     .header-left img  {
-       position:relative;
         display:none;
-           z-index: 0;
+           z-index: -0;
     }
  }
     
  @media only screen and (max-width:1280px) {
- .header-center .cv-button {
-    display:fixed;   
-     }
+ .header-center .name .cv-button {
+    display:none;
+    z-index:1;
+    }
  }
 
  @media only screen and (max-width:1280px) {
-.header-right .menu-icon {
+
+    .header-right .menu-icon {
     position:absolute;
     display: block;
     right: 1rem;
-    }
- }
- @media only screen and (max-width:1280px) {
-.hamburger-menu {
-position:absolute;
-    display: none;
-right: 3rem;
+    
+} .hamburger-menu {
+        position:absolute;
+        display: none;
+        right: 3rem;
+        
     }        
-    }
-
- @media only screen and (max-width:1280px) {       
-      #Ireland {
-width:100%;
-height:auto;
-display:block;
-    }
-     }
-
- @media only screen and (max-width:1280px) {
-     #cat-game {
-width:100%;
-height:auto;
-display:block;
-     }
- }
- @media only screen and (max-width:1280px) {
-#mustache {
-width:100%;
-height:auto;
-display:block;
-     }
- }
-@media only screen and (max-width:1280px) {
-#Catwalk {
-    width:100%;
-height:auto;
-display:block;
-}
-}
-
-@media only screen and (max-width:1280px) {
-#Chenille {
- width:100%;
-height:auto;
-display:block;
-}
-}
-@media only screen and (max-width:1280px) {
-#Papillon {
- width:100%;
-height:auto;
-display:block;
-}
-}
-@media only screen and (max-width:1280px) {
-#copieecran {
-     width:100%;
-height:auto;
-display:block;
-}
-}
-
-@media only screen and (max-width:1280px) {
-#Mélange {
-width:100%;
-height:auto;
-display:block;
-}
-}
-@media only screen and (max-width:1280px) {
- #sql_1 {
-width:100%;
-height:auto;
-display:block;
-}
-}
-     
-@media only screen and (max-width:1280px) {
-pre, code {
-    margin-left: 0;
-    overflow:hidden;
-    display:block;
-}
-}
-
-   @media only screen and (max-width:1280px) {
-     #projets {
-         display:none;
-
-     }
- }   
     
-   @media only screen and (max-width:1280px) { 
-       #hidden {
-           display:none; }
-   }
-   @media only screen and (max-width:1280px) {
-#hiddencat {
-    display:none; }
-   }
-   @media only screen and (max-width:1280px) {
-#hiddenbutterfly {
-    display:none;
 }
-   }
-   @media only screen and (max-width:1280px) {
-       #hiddenquizz {
-           display:none; }
-   }
-   @media only screen and (max-width:1280px) {
-       #hiddenwords {
-           display:none; }
-   }   
+
+ 
 @media only screen and (max-width:1280px) {
-    #sqlhidden {
-        display:none; }
+
+body {
+            font-size: 15px;
+        }
 }
-   @media only screen and (max-width:1280px) {
-#présentationhidden {
-    display:none;}
-   }
-    
-
-
-
+@media only screen and (max-width:1280px) {       
+      #Ireland, #cat-game, #Catwalk, #Chenille, #Papillon, #copieecran, #Mélange, #database {
+width:100%;
+height:auto;
+display: block;
+    }
+     }
+     @media only screen and (max-width:1280px) {
+        p pre code  {
+            display:block;
+            margin-left: 0;
+        }
+     }
+     @media only screen and (max-width:1280px) {
+pre code {
+    overflow: hidden;
+}
+     }
+     @media only screen and (max-width:1280px) {
+    #projets  {
+        display: none;
+    } 
+    }
+    @media only screen and (max-width:1280px) {
+    #hidden {
+        display:none;
+    }
+}
+@media only screen and (max-width:1280px) {
+    #hiddencat {
+        display:none;
+    }  }
+    @media only screen and (max-width:1280px) {
+        #hiddenbutterfly {
+            display:none;
+        }
+        }
+        @media only screen and (max-width:1280px) {
+            #hiddenquizz {
+                display:none
+            }
+        }
+        @media only screen and (max-width:1280px) {
+            #hiddenwords {
+                display: none;
+            }
+            }
+            @media only screen and (max-width:1280px) {
+                #sqlhidden {
+                    display:none;
+                }
+                }
+                @media only screen and (max-width:1280px) {
+                    #présentationhidden {
+                        display: none;
+                    }
+                }
