@@ -117,6 +117,10 @@ content:"";
 display: table;
 clear: both;
 }
+#contact  {
+    flex-direction: column;
+    display: block;
+    background-color: #cecbcb;
 
 
 
