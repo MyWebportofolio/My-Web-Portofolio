@@ -123,21 +123,21 @@ clear: both;
 
 
 
- @media only screen and (max-width:992px) {
+ @media only screen and (max-width:1200px) {
     .header-left img  {
         display:none;
            z-index: 0;
     }
  }
     
- @media only screen and (max-width:992px) {
+ @media only screen and (max-width:1200px) {
  .header-center .name .cv-button {
-    display:none;
+    display:absolute;
     z-index:1;
     }
  }
 
- @media only screen and (max-width:992px) {
+ @media only screen and (max-width:1200px) {
 
     .header-right .menu-icon {
     position:absolute;
@@ -154,7 +154,7 @@ clear: both;
 }
 
  
-@media only screen and (max-width:992px) {
+@media only screen and (max-width:1200px) {
 
 body {
             font-size: 15px;
