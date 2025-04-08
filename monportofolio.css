@@ -118,27 +118,26 @@ display: table;
 clear: both;
 }
 #contact  {
-    flex-direction: column;
     display: block;
     background-color: #cecbcb;
 
 
 
- @media only screen and (max-width:1280px) {
+ @media only screen and (max-width:992px) {
     .header-left img  {
         display:none;
-           z-index: -0;
+           z-index: 0;
     }
  }
     
- @media only screen and (max-width:1280px) {
+ @media only screen and (max-width:992px) {
  .header-center .name .cv-button {
     display:none;
     z-index:1;
     }
  }
 
- @media only screen and (max-width:1280px) {
+ @media only screen and (max-width:992px) {
 
     .header-right .menu-icon {
     position:absolute;
