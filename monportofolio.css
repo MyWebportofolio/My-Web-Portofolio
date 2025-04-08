@@ -154,14 +154,14 @@ clear: both;
 }
 
  
-@media only screen and (max-width:1280px) {
+@media only screen and (max-width:992px) {
 
 body {
             font-size: 15px;
         }
 }
 @media only screen and (max-width:1280px) {       
-      #Ireland, #cat-game, #Catwalk, #Chenille, #Papillon, #copieecran, #Mélange, #database {
+      #Ireland, #cat-game, #mustache, #Catwalk, #Chenille, #Papillon, #copieecran, #Mélange, #database {
 width:100%;
 height:auto;
 display: block;
