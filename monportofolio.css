@@ -123,9 +123,10 @@ clear: both;
 
 
 
- @media only screen and (max-width:1200px) {
+ @media only screen and (max-width:1280px) {
     .header-left img  {
         display:none;
+        z-index:-0;
         
     }
  }
