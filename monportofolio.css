@@ -125,14 +125,14 @@ clear: both;
 
  @media only screen and (max-width:1200px) {
     .header-left img  {
-        display:absolute;
+        position:absolute;
            z-index: 0;
     }
  }
     
  @media only screen and (max-width:1200px) {
  .header-center .name .cv-button {
-    display:absolute;
+    position:absolute;
     z-index:1;
     }
  }
