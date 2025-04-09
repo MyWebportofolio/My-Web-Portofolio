@@ -120,7 +120,7 @@ clear: both;
 #contact  {
     display: block;
     background-color: #cecbcb;
-
+}
 
 
  @media only screen and (max-width:1280px) {
@@ -153,7 +153,7 @@ clear: both;
 }
 
  
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:1280px) {
 
 body {
             font-size: 15px;
