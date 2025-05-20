@@ -1,1 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" href="chat.css">
+ <title>Portofolio</title>
+</head>
+<body>
+    
+<header>
+    <div class="header-left">
+        <img id= "ciné" src="img/20241213_img_médaillon2-chat.jpeg" alt="cinéstyle" width="800" >
+    </div>
+    <div class="header-center">
+        <div class="name">Laura Meighan</div>
+        <a target="_blank" href="projetchat-1/index.html" class="cv-button"><i class="fa fa-download "></i>
+            Download CV</a>
+        </div>
+    <div class="header-right">
+<div class="menu-icon" onclick="openNav()">&#9776;</div>
+    </div>   
+</header>
+   <div id="hamburger-menu" class="hamburger-menu">
+    <a href="javascript:void(0)" onclick="closeNav()">Close &times;</a>
+    <a href="#" onclick="closeNav()">Accueil</a>   
+    <a href="#portofolio" onclick="closeNav()">Portofolio</a>
+    <a href="#contact" onclick="closeNav()">Contact</a>
+    <a href="#présentation" onclick="closeNav()">Présentation</a>   
+</div>
 
+<div class="row"></div>
+
+<div class="project">
+    <div class = "project-text">
+    <h1>Portofolio</h1>
+               <h2>Description de mes projets:</h2>
+    <p class="showmore">J'ai réalisé les projets suivants lorsque j'étais en formation avec <a target="_blank" href="https://www.khanacademy.org">Khan Academy</a>, <a target="_blank" href="https://www.w3schools.com">W3school</a> 
+        et le <a target="_blank" href="https://www.cnam.fr">CNAM</a>. J'ai aussi réalisé quelques bases de données sql et dont vous trouverez quelques exemples également sur cette page.         
+        Vous trouverez plus d'informations sur moi en cliquant <a href="#profil">ici</a></p>  
+    </div>
+</div>
+<div class = "project">      
+<div class="project-text">
+    <h2 id="Projet1">Animations simples</h2>
+        <p class ="showmore">Pour réaliser cette première page web<span class="dots">...</span><span class="more"> j'ai utilisé  HTML et CSS pour créer des liens internes
+           et externes et appliquer à ma page web des styles différents avec CSS.  
+     </span>
+        </p>
+        <button class ="read-more-btn">Read More</button>    
+    </div>
+    <div class="project-visual">
+        <p>  <a target="_blank" href="projetchat-2/index.html"  class="static">travel agency</a> </p>
+        <img id="Ireland" src="img/231DingleHarbour-bbc2f8fa1-chat.webp"    width="300">          
+               </div>    
+    </div>
+    <div class = "project">     
+        <div class="project-text">
+        <h2>DOM "events" et DOM "animations" et JavaScript</h2>
+<h3>DOM "event"</h3>
+<div id="click-game">
+    <p>Quelques lignes de mon code... " var catPic = document.getElementById("cat-pic");
+            var onCatClick = function(e) {
+                var stashePic = document.getElementById("mustache-pic");  
+                stashePic.style.top = e.clientY+"px";
+                stashePic.style.left = e.clientX+"px";
+            };
+            catPic.addEventListener("click", onCatClick);".  Cette page html est ludique et simple.  L'utilisateur doit cliquer sur<span class="dots">...</span><span class="more"> le chat afin  que ce dernier puisse récupérer sa moustache.
+        Dans ce projet j'ai utilisé les propriétés de DOM afin que l'utilisateur puisse déplacer la moustache jusqu'à
+        ce qu'il parvienne à la placer au bon endroit. (Remarque: Il faut cliquer plusieurs fois!)
+        Ma fonction onCatClick () contient 4 éléménts:
+        2 propriétés d'un "DOM event" et 2 coordonnées X et Y.
+        Les deux évenements DOM et Les 2 coordonnées X et Y vont permettre d'une part d'intégrer des éléments HTML comme variables dans ma 
+        fonction onClick() contenue dans Javascript et d'autre part de rendre le click de l'utilisateur interactif.  
+        L'"event listener" permet de rappeler ma fonction onCatClick () à chaque nouveau click de l'utilisateur.</span>
+    </p>
+    <button class ="read-more-btn">Read More</button> 
+    </div>
+        </div>
+        <div class="project-visual">
+          <div id ="Catsmustache">
+            <h2>HTML, CSS, DOM "events" et javascript</h2>
+            <p> <a target= "_blank" href="projetchat-3/index.html"  class="catwithmustache">the-cat-mustach</a></p>
+            <img id="cat-game" src="img/cat.moustache-chat.png" width="300" > 
+            <img id="mustache" src="img/mustache-chat.png"  width="300" >
+             </div>
+    </div>
+    </div>
+    
+    <div class = "project">
+        <div class = "project-text">
+    <h3>DOM "animation"</h3>
+<div id="walkthecat">
+        <p>Quelques lignes de mon code..."var catEl = document.getElementById("cat");
+  var startTime = new Date().getTime();
+  var walkTheCat = function() {
+      var currTime = new Date().getTime();
+      var secondsElapsed = ((currTime - startTime)/1000);
+      var newLeft = 20+((currTime -startTime)/1000);
+      var newLeft=100+secondsElapsed*20;
+      catEl.style.left=newLeft+"px";
+      if (newLeft<350) {
+      window.requestAnimationFrame(walkTheCat);} 
+      };
+  walkTheCat();".  Pour réaliser cette animation j'ai utilisé<span class="dots">...</span><span class="more"> HTML, CSS, DOM "animation" et javascript.
+        Cet exemple de code montre que l'animation du chat est définie par une fonction.  Pour indiquer toute modification de la fonction au navigateur   
+        il faut utiliser "Window requestAnimationFrame".
+Le sens de la marche du chat est un exemple  de fonctionnement de l'animation. Si je veux également minuter sa marche
+        j'utilise la méthode "window.requestAnimationFrame" pour indiquer ce changement au navigateur.  Le navigateur prendra
+        en compte cette modification avant son actualisation.  Cette méthode fait fonctionner l'animation en continu à chaque
+fois que la fonction (walkTheCat) est appellée.</span></p>
+<button class = "read-more-btn">Read More</button>
+</div>
+</div>   
+<div class="project-visual">
+    <div id ="Cat">
+        <h2>HTML, CSS, DOM "animation" et javascript</h2>
+        <p> <a target="blank" href= "projetchat-4/index.html" class="Cat-anim">Animation-cat</a></p>
+        <img id="Catwalk" src="img/ChatCat-chat.jpg" width="300"   > 
+       </div>
+    </div>
+    </div>    
+
+<div class = "project">
+    <div class = "project-text">
+    <h2>JQuery</h2>
+<h3> Modifier DOM avec Jquery</h3>
+<div id ="chenille">
+<p>Quelques lignes de mon code.."$("h1").text("Butterflies");
+     $("p").html("<strong>Butterflies</strong> can have vivid colors");
+        $("img").attr("src",'https://www.kasandbox.org/
+        programming-images/animals/butterfly_monarch.png')
+        $("h1").css("color","green")".  
+    Jquery est une "librairie" de fonctions JavaScript que<span class="dots">...</span><span class="more">j'ai utilisée dans cet exercice pour remplacer tous les mots
+    "Caterpillars" par les mots "Butterflies": JQuery text() est utilisé pour modifier par exemple un texte.  Après avoir modifié les titres, j'ai remplacé "caterpillars" par "butterflies" dans les paragraphes 
+    Enfin J'ai changé la couleur du titre et remplacé l'image de la chenille par l'image d'un papillon. Plus précisément Jquery m'a permis d'effectuer tous ces changements avec quelques lignes de code
+    en un temps limité.  Cet exercice a montré tout l'intêret que JQuery peut présenter pour modifier de plus grands contenus html. En effet il n'est pas nécessaire de modifier chaque ligne html.
+    </span></p>
+        <button class = "read-more-btn">Read More</button>    
+    </div>
+    </div>
+    <div class ="project-visual">
+        <div id ="jquery">
+            <p><a target = "_blank" href="projetchat-5/index.html" class="transform">Caterpilar-to-Butterfly</a></p>
+        <img id="Chenille" src="img/Monarch_caterpillar_on_swan_plant_branchlet-chat.jpg" width="300" height="250">     
+        <img id="Papillon" src="img/butterfly_monarch-chat.png" width="300" height="250" >
+                </div>
+</div>
+</div>
+
+<div class = "project">
+    <div class = "project-text">
+<h2>Créer des formulaires avec JQuery</h2>
+<h3>Trivia-quizz</h3>
+<div id="trivia-game">
+<p> Quelques lignes de mon code..."$("#quiz-form").on("submit",)"; ""eventpreventDefault";"var $answer = $("#trivia-answer"); var answer = $answer.val(); if (answer ==="resig"){
+    $("#result").text("You did it!") 
+} else{ 
+$("#result").text("Try again!")
+}". Pour développer ce quizz j'ai d'abord créé un formulaire puis<span class="dots">...</span><span class="more"> j'ai utilisé un "event listener" de DOM. 
+Le code montre que l"event listener" va générer un évenement à chaque fois que l'utilisateur cliquera sur le bouton "answer".
+Dans ce jeu l'évenement généré dépendra du choix séléctionné par l'utilisateur.
+ Ce code permet à l'utilisateur de rester sur la page car javascript intercepte les données recueillies sans l'utilisation d'un serveur exterieur. Le variable $answer store 
+ la collection des réponses que l'utilisateur peut choisir.  Plus précisément le fonctionnement de la méthode Jquery "val" est structuré sur le choix sélectionné par l'utilisateur:
+J'ai ajouté dans mon code des conditions afin que l'utilisateur puisse savoir si sa réponse est correcte:</span>
+</p>
+<button class = "read-more-btn">Read More</button> 
+</div>
+    </div>
+    <div class = "project-visual">
+
+        <div id="form">
+            <p><a target="_blank" href= "projetchat-6/" class="quizz">Trivia-quizz</a></p>
+            <img id="copieecran" src="img/Capture d’écran (198)-chat.png" width="300">
+            
+            </div> 
+ </div>
+</div>
+<div class="project"> 
+<div class = "project-text">
+<h3>Formulaire - wordgame</h3>
+<div id="Scrambledwords">
+    <p>Quelques lignes de mon code...  "$("#game").hover(
+    function() { $("#img").show(1000); },
+    function() { $("#img").hide(1000); } );" J'ai construit ce jeu sur sur la base d'un questionnaire html.  Celui-ci est<span class="dots">...</span><span class="more"> ludique et pédagogique.  
+    Il n'a que 3 catégories contenant un nombre de mots restreint mais les possibilités sont infinies, avec Html, Css et Javascript.  C'est Javascript et Jquery qui m'ont permis de rendre 
+    ce jeu interactif.
+<!-- Biology Scrambled Words -->
+        <!--<form id="fun-form">
+            <fieldset id="biologyscrambled">
+                    <legend>Biology Scrambled Words</legend> -->
+  </span></p>
+<button class = "read-more-btn">Read More</button>
+</div>
+</div>
+<div class ="project-visual">
+    <div id="form-Jquery">
+        <p><a target="_blank" href= "projetchat-7/index.html" class="Scrambledwords">Scrambled</a></p>
+        <img id="Mélange" src="img/istockphoto-2061316065-alphabet-chat.jpg" width="300">
+     </div>
+</div>
+</div>
+<div class = "project">
+    <div class = "project-text"> 
+    <h2>SQL</h2>
+  <h3>Mes première base de données SQL</h3>          
+<div id = "sql">
+<p>Pendant ma formation j'ai réalisé quelques bases de données SQL.  Vous pourrez voir quelques exemples en cliquant
+    sur le lien dans la colonne de droite.
+sql_1: Dans cet exemple j'ai crée une base de données pour un magasin fictif et inséré des valeurs avec "CREATE TABLE", "INSERT" and "VALUES";
+J'ai aussi utilisé "SELECT", "FROM", "WHERE" et "ORDER BY" <span class="dots">...</span><span class="more"> pour lancer des requêtes et selectionner par commande ou par client par exemple.
+sql_2: Cette base de données contient un ensemble de données concernant une liste d'étudiants et leurs moyenne.  J'ai ajouté aux requêtes habituelles des
+conditions en utilisant "CASE" puis "WHEN", "THEN", "ELSE".
+sql_3:  Le schéma de cette base de données relationnelle contient une liste de client(e)s avec leurs IDs, noms et emails et une deuxième liste avec 
+les IDs des commandes et des client(e)s, l'objet commandé et son prix.  Dans cet exercice j'ai lancé une requête pour avoir la liste de chaque client(e) avec
+son nom associé à son email et à l'objet commandé et associé son prix.  En plus des requêtes normales j'ai donc utilisé LEFT OUTER JOIN pour joindre la
+liste des clients avec la liste de leurs commandes, incluant aussi les client(e)s n'ayant pas passé de commandes.  J'ai lancé ensuite une autre requête et j'ai ajouté ORDER BY pour placer
+chaque client(e) dans le tableau selon le montant dépensé:  Dans ce cas ci, ORDER BY total_money_spent desc, le desc indique un ordre descendant.
+sql_4:  Dans cet exercice j'ai modifié une rangée déjà créée en utilisant ALTER TABLE, SET, ADD, FROM et UPDATE ou DELETE.</span></p>
+<button class = "read-more-btn">Read More</button>
+</div>     
+    </div>
+    <div class = "project-visual">
+        <div id = "sql_databases">
+            <p><a target="_blank" href = "projetchat-8/index.html"  class="My_databases">Bases_de_données_sql</a></p>
+            <img id="sql_1"  src="img/1er_projetchat_sql.png" alt="Base de données" width="400"> 
+           </div>
+    </div>
+</div>           
+<div class="project">
+    <div class="project-text">
+        <h1 id="profil">Présentation</h1>
+                        <p>Cliquez sur ce <a target="_blank" href="projetchat-1/index.html">lien</a> pour accéder à mon cv</p>
+                     <p id = "présentationhidden">
+            J'ai suivi en 2023 une formation de développeur web ce qui m'a permis de travailler avec HTML5, css3, JavaScript et Jquéry.   
+                            J'ai réalisé pendant cette formation de nombreux projets dont vous trouverez les liens plus <a href = "#Projet1">haut</a> sur cette page.   
+                            La conception "front-end" des sites web m'intéresse et peut représenter un vrai défi. Il faut parfois faire des choix et accomoder l'aspect créatif, pratique et 
+                            fonctionnel du site afin de privilégier l'expérience utilisateur et la faisabilité du projet.  J'utilise aussi Gimp 2.10, un logiciel de manipulation d'images.
+                Vous trouverez sur <a href ="#ciné">l'en-tête</a> de cette page un de mes dessins modifié avec cet outil: Eclairage ajouté et style "photo analogique" appliqué
+                au niveau des bordures. </p>
+                      
+            </div>
+        </div>
+
+        <script src = "script.js"></script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".read-more-btn");
+
+    buttons.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+            const paragraph = btn.previousElementSibling; // <p class="showmore">
+            const dots = paragraph.querySelector(".dots");
+            const moreText = paragraph.querySelector(".more");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                moreText.style.display = "none";
+                btn.textContent = "Read more";
+            } else {
+                dots.style.display = "none";
+                moreText.style.display = "inline";
+                btn.textContent = "Read less";
+            }
+        });
+    });
+});
+
+  </script>
+   </body>
+</html>
+   
