@@ -31,20 +31,32 @@
 </div>
 
 <div class="row"></div>
-<div class="column">
-    <div id="portofolio">
+<div class="project">
+    <div class="project-text">
     <h1>Portofolio</h1>
-       <div id = "projets">
-        <h2>Description de mes projets:</h2>
-    <p>Ces projets ont été réalisés avec les formations de <a target="_blank" href="https://www.khanacademy.org">Khan Academy</a>, <a target="_blank" href="https://www.w3schools.com">W3school</a> 
+    <h2>Description de mes projets:</h2>
+    <p class="showmore">J'ai réalisé les projets suivants lorsque j'étais en formation avec <a target="_blank" href="https://www.khanacademy.org">Khan Academy</a>, <a target="_blank" href="https://www.w3schools.com">W3school</a> 
         et le <a target="_blank" href="https://www.cnam.fr">CNAM</a>. J'ai aussi réalisé quelques bases de données sql et dont vous trouverez quelques exemples également sur cette page.         
-        Vous trouverez plus d'informations sur moi en cliquant <a href="#profil">ici</a>.  </p>  
-       </div>
-        <h2 id="Projet1">Animations simples</h2>
-        <p>>Pour réaliser cette première page web j'ai utilisé HTML et CSS.  Ce qui m'a plu c'est la possibilité d'appliquer
-        de nombreux styles avec css et de créer des liens internes et externes. </p>
-    
-        <h2 id="Projet2">DOM "events" et DOM "animations" et JavaScript</h2>
+        Vous trouverez plus d'informations sur moi en cliquant <a href="#profil">ici</a></p>  
+    </div>
+</div>
+
+<div class = "project">      
+<div class="project-text">
+    <h2 id="Projet1">Animations simples</h2>
+        <p class ="showmore">Pour réaliser cette première page web<span class="dots">...</span><span class="more"> j'ai utilisé  HTML et CSS pour créer des liens internes
+           et externes et appliquer à ma page web des styles différents avec CSS.  
+     </span>
+        </p>
+        <button class ="read-more-btn">Read More</button>    
+    </div>
+<div class="project-visual">
+        <p><a target="_blank" href="root-project/projet-2" class="static">travel agency</a></p>
+        <img id = "Ireland" src="231DingleHarbour-bbc2f8fa1.webp" width="300">          
+               </div>    
+    </div>
+
+<h2 id="Projet2">DOM "events" et DOM "animations" et JavaScript</h2>
 <h3>DOM "event"</h3>
 <div id="click-game">
     <p>Cette page html est ludique et simple.  L'utilisateur doit cliquer sur le chat afin  que ce dernier puisse récupérer sa moustache.
@@ -160,15 +172,7 @@ sql_4:  Dans cet exercice j'ai modifié une rangée déjà créée en utilisant 
 </div>
         </div>
 
-
-          <div class="column">
-        <h2>HTML CSS javascript</h2>
-        <div id="agency">
-           <p>  <a href="root-project/projet-2"  class="static">travel agency</a> </p>
- <img id="Ireland" src="231DingleHarbour-bbc2f8fa1.webp"    width="300">          
-        </div> 
-
-        <div id ="Catsmustache">
+<div id ="Catsmustache">
             <h2>HTML, CSS, DOM "events" et javascript</h2>
             <p> <a href="root-project/projet-3" class="catwithmustache">the-cat-mustach</a></p>
             <img id="cat-game" src="cat.moustache.png" width="300"> 
