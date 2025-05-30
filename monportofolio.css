@@ -89,130 +89,82 @@ padding: 20px;
     background-color: orange;
 }
 
-
-            .column {
-    float: left;
-    width:50%;
-    padding: 10px;
-background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-            }
-
-
-    p {
+h1, h2 , h3 {
+    margin-left: 20px;
+}
+.project-text p {
     margin-left: 20px;
     margin-right: 20px;
     
  }  
- 
- pre {
-    margin-left : 24px;
-        
-    }
 
-   
-.row:after {
-content:"";
-display: table;
-clear: both;
-}
+.more {
+    display: none;
+ }
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+  }
+  
+  .project-text,
+  .project-visual {
+    flex: 1;
+  }
+  
+  .project-visual img {
+    display: block;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+  }
+  
 #contact  {
     display: block;
     background-color: #cecbcb;
 }
-
-
- @media only screen and (max-width:1280px) {
-    .header-left   {
+@media only screen and (max-width:1280px) {
+    .header-left img  {
+       position:relative;
         display:none;
-        }
- }
-    
- @media only screen and (max-width:1200px) {
- .header-center .name .cv-button {
-    position:absolute;
-    
+           z-index: 0;
     }
  }
+    
+ @media only screen and (max-width:1280px) {
+ .header-center .cv-button {
+    display:fixed;   
+     }
+ }
 
- @media only screen and (max-width:1200px) {
-
-    .header-right .menu-icon {
+ @media only screen and (max-width:1280px) {
+.header-right .menu-icon {
     position:absolute;
     display: block;
     right: 1rem;
-    
-} .hamburger-menu {
-        position:absolute;
-        display: none;
-        right: 3rem;
-        
+    }
+ }
+ @media only screen and (max-width:1280px) {
+.hamburger-menu {
+position:absolute;
+    display: none;
+right: 3rem;
     }        
-    
-}
+    }
 
- 
-@media only screen and (max-width:1280px) {
+   @media (max-width: 1280px) {
+    .project {
+      flex-direction: column;
+    }
+  
+    .project-text,
+    .project-visual {
+      width: 100%;
+    }
+  }
+  
 
-body {
-            font-size: 15px;
-        }
-}
-@media only screen and (max-width:1280px) {       
-      #Ireland, #cat-game, #mustache, #Catwalk, #Chenille, #Papillon, #copieecran, #Mélange, #database {
-width:100%;
-height:auto;
-display: block;
-    }
-     }
-     @media only screen and (max-width:1280px) {
-        p pre code  {
-            display:block;
-            margin-left: 0;
-        }
-     }
-     @media only screen and (max-width:1280px) {
-pre code {
-    overflow: hidden;
-}
-     }
-     @media only screen and (max-width:1280px) {
-    #projets  {
-        display: none;
-    } 
-    }
-    @media only screen and (max-width:1280px) {
-    #hidden {
-        display:none;
-    }
-}
-@media only screen and (max-width:1280px) {
-    #hiddencat {
-        display:none;
-    }  }
-    @media only screen and (max-width:1280px) {
-        #hiddenbutterfly {
-            display:none;
-        }
-        }
-        @media only screen and (max-width:1280px) {
-            #hiddenquizz {
-                display:none
-            }
-        }
-        @media only screen and (max-width:1280px) {
-            #hiddenwords {
-                display: none;
-            }
-            }
-            @media only screen and (max-width:1280px) {
-                #sqlhidden {
-                    display:none;
-                }
-                }
-                @media only screen and (max-width:1280px) {
-                    #présentationhidden {
-                        display: none;
-                    }
-                }
