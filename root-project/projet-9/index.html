@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+<link rel = "stylesheet"  href = "fle.css"> 
+<script>
+const btn = document.querySelector("read-more-btn");
+const dots = document.querySelector(".dots");
+const moreText = document.querySelector(".plus");
+btn.addEventListener("click", function() {
+if (dots.style.display === "none") {
+    dots.style.display ="inline";
+    moreText.style.display = "none";
+    btn.textContent = "Lire plus";
+} 
+else {
+    dots.style.display = "none";
+    moreText.style.display = "plus";
+    btn.textContent = "Lire moins";
+}
+});
+</script>
+</head>
+<body>
+<div class = "HEADER"></div>
+<h1>Le FLE au quotidien</h1>
+<div class = "row">
+<div class = "leftcolumn">
+<div class = "card">
+<h2>Informatique</h2>
+<h3>Le français du numérique</h3>
+<ul>
+<li>Bienvenue dans "Le français du numérique"!</li>
+<li>Leçon 1, les bases.
+<ul>
+ <li>L'objectif de cette leçon est de vous familiariser avec des mots ou des notions clés du numérique.</li>
+<li>Ces expressions sont souvent présentes sur des sites numériques français.</li>
+   <li>Il est fréquent d'utiliser ces sites pour entreprendre des démarches administratives,</li>
+    <li>Déposer votre CV ou encore acheter des timbres en ligne</li>
+</ul>
+</li>
+</ul>
+<h3>Vocabulaire du numérique, actions simples</h3>
+<ul>
+<li><strong>Cliquer, Verbe</strong></li>
+<pre class = "voirplus">Cliquer sur le bouton<span class = "dots">...</span><span class = "plus"> d'une souris 
+ou poser le doigt sur un écran pour 
+activer une commande. 
+<i>Il suffit de cliquer sur l'onglet pour 
+voir ce que ce site propose</i></span></pre>
+<button class = "read-more-btn">Lire plus</button>
+<li>Mot:<strong>Ouvrir, Verbe</strong></li> 
+<pre>Afficher le contenu de (un élément), 
+lancer l'exécution de (un programme).
+(contraire fermer).</pre>
+<li>Mot:<strong>Enregistrer, Verbe</strong></li> 
+<pre>Stocker (des données) en mémoire. 
+<i>Sauvegarder.  Enregistrer un fichier sur 
+le disque dur.</i></pre>
+<li>Mot:<strong>Continuer, Verbe</strong></li> 
+<pre>Ce mot parfois trouvé sur les sites web  
+est souvent "dynamique"  Cliquez-le pour 
+être dirigé sur la page suivante ou lire 
+une page dans son intégralité.  (l'action contraire 
+serait de cliquer sur le mot <strong>
+"retour"</strong> pour aller sur la page précédente.) 
+Quelques variantes: <strong>En savoir plus</strong>
+<i>Appuie sur l'onglet Continuer pour aller sur
+la page suivante.</i></pre>  
+<li>Mot:<strong>Annuler,Verbe</strong></li> 
+<pre>Cette commande vous permet d'annuler la 
+dernière action que vous avez effectuée.
+<i>J'ai ouvert cette fenêtre de dialogue 
+par erreur. Appuie juste sur la commande annuler</i></pre>
+<li>Mot:<strong>Télécharger, Verbe</strong></li> 
+<pre>Copier des données (stockées sur un ordinateur 
+ou sur un serveur) sur son propre ordinateur par 
+l'intermédiaire d'un réseau téléinformatique.
+<i>Aujourd'hui je dois télécharger ce document 
+sur mon ordinateur</i></pre>
+</ul>
+<h3>Vocabulaire du numérique, navigation</h3>
+<ul>
+<li>Mot:<strong>Page d'accueil, nom féminin</strong></li> 
+<pre>Première page d'un site internet
+<i>Cette page d'accueil contient beaucoup
+d'images</i></pre>
+<li>Mot:<strong>Menu, nom masculin</strong></li> 
+<pre>Liste d'options, d'opérations proposées 
+à l'utilisateur, sur l'écran d'un ordinateur.
+<i>Ouvre le menu déroulant et tu pourras facilement
+accéder à une catégorie.</i></pre>
+<li>Mot:<strong>Lien, nom masculin</strong></li> 
+<pre>Un lien peut être un texte, un bouton ou une images
+sur lesquels il est possible de cliquer pour accéder à
+une page html ou à un contenu par exemple. 
+<i>Tu auras plus d'informations en cliquant sur ce lien.</i></pre>
+<li>Mot:<strong>Onglet, nom masculin</strong></li> 
+<pre>Elément d'une fenêtre sur lequel vous pouvez cliquer
+ou passer votre souris pour accéder à un documebt 
+ou à des fonctions et plus encore.
+<i>Le signe "+" te permet de cliquer et d'ouvrir
+un nouvel onglet</i></pre>
+<li>Mot:<strong>Page, nom féminin</strong></li> 
+<pre>Une page web contient les informations
+d'un site internet.
+<i>L'utilisation de cette page web est très ergonomique</i></pre>
+</ul> 
+</div>
+<div class = "rightcolumn">
+    <div class = "card">
+        </div>
+</div>
+</div>
+</div>
+</body>
+</html>
 
