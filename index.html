@@ -116,10 +116,9 @@ $("#result").text("Try again!")
 </div>
 <h3>Formulaire - wordgame</h3>
 <div id="Scrambledwords">
-    <p>J'ai construit ce jeu sur sur la base d'un questionnaire html.  Celui-ci est ludique et pédagogique.  Il n'a que 3 catégories 
-     contenant un nombre de mots restreint mais les possibilités sont infinies, avec Html, Css et Javascript.</p></div>
-<div id = "hiddenwords">
-    <p><!-- Biology Scrambled Words -->
+    <p class = "more">J'ai construit ce jeu sur sur la base d'un questionnaire html.  Celui-ci est <span class="dots">...</span><span class = "more"> ludique et pédagogique.  Il n'a que 3 catégories 
+     contenant un nombre de mots restreint mais les possibilités sont infinies, avec Html, Css et Javascript.
+<!-- Biology Scrambled Words -->
         <!--<form id="fun-form">
             <fieldset id="biologyscrambled">
                     <legend>Biology Scrambled Words</legend> -->
@@ -127,15 +126,15 @@ $("#result").text("Try again!")
 <pre><code> $("#game").hover(
     function() { $("#img").show(1000); },
     function() { $("#img").hide(1000); }
-); </code></pre></p>
+); </code></pre></span></p>
+    <button class "read-more-btn">Read more</button>
      </div>
      <h2>SQL</h2>
   <h3>Mes première base de données SQL</h3>          
 <div id = "sql">
-<p>Pendant ma formation j'ai réalisé quelques bases de données SQL.  Vous pourrez voir quelques exemples en cliquant
-    sur le lien dans la colonne de droite.</p></div>
-<div id = "sqlhidden">
-  <p>sql_1: Dans cet exemple j'ai crée une base de données pour un magasin fictif et inséré des valeurs avec "CREATE TABLE", "INSERT" and "VALUES";
+<p class = "showmore">Pendant ma formation j'ai réalisé quelques bases de données SQL.  Vous pourrez voir<span class = "dots">...</span><span class = "more"> quelques exemples en cliquant
+    sur le lien dans la colonne de droite.
+sql_1: Dans cet exemple j'ai crée une base de données pour un magasin fictif et inséré des valeurs avec "CREATE TABLE", "INSERT" and "VALUES";
 J'ai aussi utilisé "SELECT", "FROM", "WHERE" et "ORDER BY" pour lancer des requêtes et selectionner par commande ou par client par exemple.
 sql_2: Cette base de données contient un ensemble de données concernant une liste d'étudiants et leurs moyenne.  J'ai ajouté aux requêtes habituelles des
 conditions en utilisant "CASE" puis "WHEN", "THEN", "ELSE".
@@ -144,20 +143,20 @@ les IDs des commandes et des client(e)s, l'objet commandé et son prix.  Dans ce
 son nom associé à son email et à l'objet commandé et associé son prix.  En plus des requêtes normales j'ai donc utilisé LEFT OUTER JOIN pour joindre la
 liste des clients avec la liste de leurs commandes, incluant aussi les client(e)s n'ayant pas passé de commandes.  J'ai lancé ensuite une autre requête et j'ai ajouté ORDER BY pour placer
 chaque client(e) dans le tableau selon le montant dépensé:  Dans ce cas ci, ORDER BY total_money_spent desc, le desc indique un ordre descendant.
-sql_4:  Dans cet exercice j'ai modifié une rangée déjà créée en utilisant ALTER TABLE, SET, ADD, FROM et UPDATE ou DELETE.</p>
+sql_4:  Dans cet exercice j'ai modifié une rangée déjà créée en utilisant ALTER TABLE, SET, ADD, FROM et UPDATE ou DELETE.</span></p>
+    <button class = "read-more-btn">Read more</button>
 </div>  
 <h2>Créer des contenus FLE simples</h2> 
  <div id = "Blog">
-<p>Ce blog est dédié aux adultes débutants...</p></div>
-        <div id = "bloghidden">
-<p>C'est une page pédagogique avec des jeux et des exercices réalisée avec html, css, JS et Flask. En cours de construction.</p>
-</div>
+<p class = "showmore">Ce blog est dédié aux<span class = "dots">...</span><span class = "more"> adultes débutants
+C'est une page pédagogique avec des jeux et des exercices réalisée avec html, css, JS et Flask. En cours de construction.</span></p>
+<button class = "read-more-btn">Read more</button>
     </div>
  <div class="project">
     <div class="project-text">
         <h1 id="profil">Présentation</h1>
-                <p>Cliquez sur ce <a target="_blank" href="root-project/projet-1/index.html">lien</a> pour accéder à mon cv</p>
-                <p>Depuis 2023 j'ai développé et acquis des compétences en langages de programmation avec lesquels j'ai pu créer ce site: HTML5, css3, JavaScript et Jquéry.   
+                <p class = ""showmore">Cliquez sur ce <a target="_blank" href="root-project/projet-1/index.html">lien</a> pour accéder à mon cv</p>
+                <p>Depuis 2023 j'ai développé et<span class = "dots">...</span><span class="more"> acquis des compétences en langages de programmation avec lesquels j'ai pu créer ce site: HTML5, css3, JavaScript et Jquéry.   
                 J'ai réalisé pendant cette formation de nombreux projets dont vous trouverez les liens plus <a href = "#Projet1">haut</a> sur cette page. 
                 J'ai aussi abordé les langages c et Python en suivant le mooc cs50 "Introduction to computer science" de Harvard.
                 En dehors de la programmation j'aime utiliser le logiciel de manipulation d'images Gimp pour des projets créatifs, comme par exemple réaliser des 
@@ -165,8 +164,8 @@ sql_4:  Dans cet exercice j'ai modifié une rangée déjà créée en utilisant 
                 Vous troverez sur <a href ="#ciné">l'en-tête</a> de cette page un de mes dessins modifié avec cet outil: Eclairage ajouté et style "photo analogique" appliqué
                 au niveau des bordures.  Je compte mettre en pratique mes compétences dans la réalisation de projets pédagogiques tel que l'apprentissage de la langue française (FLE
                 ou remise à niveau).  En cliquant sur ce lien <a target="_blank" href = "root-project/projet-9/index.html"  class="">Blog</a> vous serez dirigé vers une 
-                page consacrée à ce sujet.</p>
-                      
+                page consacrée à ce sujet.</span></p>
+        <button class = "read-more-btn">Read more</button>
     </div>         
  </div>
 </div>
