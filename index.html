@@ -36,9 +36,10 @@
     <h1>Portofolio</h1>
        <div id = "projets">
         <h2>Description de mes projets:</h2>
-    <p>Ces projets ont été réalisés avec les formations de <a target="_blank" href="https://www.khanacademy.org">Khan Academy</a>, <a target="_blank" href="https://www.w3schools.com">W3school</a> 
-        et le <a target="_blank" href="https://www.cnam.fr">CNAM</a>. J'ai aussi réalisé quelques bases de données sql dont vous trouverez quelques exemples sur le bas de cette page.         
-        Vous trouverez plus d'informations sur moi en cliquant <a href="#profil">ici</a>.  </p>  
+    <p class = "showmore">Ces projets ont été réalisés avec les formations de <a target="_blank" href="https://www.khanacademy.org">Khan Academy</a>, <a target="_blank" href="https://www.w3schools.com">W3school</a> 
+        et le <a target="_blank" href="https://www.cnam.fr">CNAM</a>. J'ai aussi<span class = "dots">...</span><span class="more"> réalisé quelques bases de données sql dont vous trouverez quelques exemples sur le bas de cette page.         
+        Vous trouverez plus d'informations sur moi en cliquant <a href="#profil">ici</a>.</span></p> 
+           <button class = "read-more-btn">Read more</button>
        </div>
         <h2 id="Projet1">Animations simples</h2>
         <p>>Pour réaliser cette première page web j'ai utilisé HTML et CSS.  Ce qui m'a plu c'est la possibilité d'appliquer
@@ -223,6 +224,31 @@ sql_4:  Dans cet exercice j'ai modifié une rangée déjà créée en utilisant 
 <p><a target="_blank" href="root-project/projet-1/index.html">Cliquez-ici</a>
 </div>
     <script src = "script.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".read-more-btn");
+
+    buttons.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+            const paragraph = btn.previousElementSibling; // <p class="showmore">
+            const dots = paragraph.querySelector(".dots");
+            const moreText = paragraph.querySelector(".more");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                moreText.style.display = "none";
+                btn.textContent = "Read more";
+            } else {
+                dots.style.display = "none";
+                moreText.style.display = "inline";
+                btn.textContent = "Read less";
+            }
+        });
+    });
+});
+
+  </script>
+
 </body>
 </html>
 
