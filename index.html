@@ -75,15 +75,15 @@
 <h3> Modifier DOM avec Jquery</h3>
 <div id ="chenille">
 <p class = "showmore">Jquery est une "librairie" de méthodes JavaScript que <span class = "dots">...</span><span class = "more"> j'ai utilisée dans cet exercice pour remplacer tous les mots
-    "Caterpillars" par les mots "Butterflies". JQuery text() est utilisé pour modifier juste un texte:
+    "Caterpillars" par les mots "Butterflies".  On utilise JQuery text() pour modifier un texte:
      Dans mon texte j'ai donc utilisé la méthode suivante "$("h1").text("Butterflies");" pour remplacer "caterpillars" par "butterflies".  Une fois le texte changé j'ai aussi changé la couleur 
     du titre et l'image source pour remplacer le "caterpillar" par un "butterfly.
-    Pour insérer ce contenu j'ai utilisé la méthode de JQuery .html() et différentes balises:
+    Cependant on utilise la méthode de JQuery .html() pour créer du contenu. Dans mon texte j'ai donc modifié la couleur du titre et remplacé l'image source en ajoutant des balises.
     $("p").html("<strong>Butterflies</strong> can have vivid colors");
     $("img").attr("src",'https://www.kasandbox.org/
     programming-images/animals/butterfly_monarch.png')
     $("h1").css("color","green")  
-    jquery m'a permis d'effectuer des changements dans mon texte en un temps limité.  Bien qu'il s'agissait d'un texte court, 
+    jquery m'a permis d'effectuer des changements en un temps limité.  Bien qu'il s'agissait d'un texte court, 
     cet exercice a montré tout l'intêret que JQuery vaut à être utilisé pour modifier de plus grands textes et ses contenus html.  
 </span></p>
     <button class = "read-more-btn">Read more</button>
@@ -94,21 +94,19 @@
 <p class = "showmore">Pour développer ce quizz j'ai d'abord créé un formulaire puis <span class = "dots">...</span><span class = "more"> j'ai utilisé un "event lstener" de DOM. 
 Le code suivant montre que l"event listener" va générer un évenement à chaque fois que l'utilisateur cliquera sur le bouton "answer".
 Dans ce jeu l'évenement généré dépendra du choix séléctionné par l'utilisateur.
-<pre><code>
-$("#quiz-form").on("submit",)
-</code></pre>
+$("#quiz-form").on("submit",);
 Un navigateur par défaut envoie les formulaires sur un serveur afin de sauvegarder les données.
- <pre><code>"eventpreventDefault</code></pre> Ce code est utilisé pour que javascript intercepte les données recueillies et permette à l'utilisateur
+ "eventpreventDefault; Ce code est utilisé pour que javascript intercepte les données recueillies et permette à l'utilisateur
   de rester sur la page.  Le variable $answer store la collection Jquery de toutes les réponses que l'utilisateur peut choisir. 
- <prev><code>var $answer = $("#trivia-answer");</code></prev>
+ var $answer = $("#trivia-answer");
  Plus précisément le fonctionnement de la méthode Jquery "val" est structuré sur le choix sélectionné par l'utilisateur:
-<pre><code> var answer = $answer.val();</code></pre>
+ var answer = $answer.val();
 J'ai ajouté dans mon code des conditions afin que l'utilisateur puisse savoir si sa réponse est correcte:
-<pre><code> if (answer ==="resig"){
+ if (answer ==="resig"){
     $("#result").text("You did it!") 
 } else{ 
-$("#result").text("Try again!")
-}</code></pre>
+$("#result").text("Try again!");
+}
 </span></p>
     <button class = "read-more-btn">Read more</button>
 </div>
@@ -121,10 +119,10 @@ $("#result").text("Try again!")
             <fieldset id="biologyscrambled">
                     <legend>Biology Scrambled Words</legend> -->
    Javascript et Jquery m'ont permis de rendre ce jeu interactif:
-<pre><code> $("#game").hover(
+ $("#game").hover(
     function() { $("#img").show(1000); },
     function() { $("#img").hide(1000); }
-); </code></pre>
+); 
     </span></p>
     <button class = "read-more-btn">Read more</button>
      </div>
