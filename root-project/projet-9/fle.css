@@ -33,4 +33,9 @@ body {
 p {
   margin-left : 20px;
   margin-right : 100px;
+
+  li:: first-letter {
+    color : green;
+    font-weight:bold;
+  }
   
