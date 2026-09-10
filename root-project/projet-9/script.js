@@ -1,4 +1,4 @@
 function parler(lettre) {
-  const audio = new Audio('sons/a.mp3');
+  const audio = new Audio('a.mp3');
   audio.play();
 }
