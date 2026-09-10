@@ -1,6 +1,8 @@
 function parler(lettre) {
-  const audio = new Audio('a.mp3');
+  // Backticks are key here (typically found on the key under Esc or key 7 on AZERTY keyboards)
+  const audio = new Audio(`sons/${lettre}.mp3`);
+  
   audio.play().catch(error => {
-    console.warn('Audio playback prevented by browser:', error);
+    console.error('Playback error:', error);
   });
 }
